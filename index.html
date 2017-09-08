@@ -1,17 +1,18 @@
 <!doctype html>
 <html>
     <head>
+      <link type="text/css" rel="stylesheet" href="node_modules/galleria/dist/themes/classic/galleria.classic.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
       <script src="node_modules/galleria/src/galleria.js"></script>
     </head>
     <body>
 
-   <script>
+   <!-- <script>
 (function() {
   console.log('You have reached the Galleria.js test')
     if (Galleria) { $("body").text('Galleria works') }
 }());
-</script>
+</script> -->
 
   <H1>Testing to make sure the file loads. This is below /script.</H1>
 
@@ -22,6 +23,15 @@
     <img src="photo2.jpg">
     <img src="photo3.jpg">
 </div>
+
+<script>
+(function() {
+    Galleria.loadTheme('node_modules/galleria/dist/themes/classic/galleria.classic.min.js');
+    Galleria.run('.galleria');
+}());
+</script>
+
+
     </body>
 
 
