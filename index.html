@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+      <script src="node_modules/galleria/src/galleria.js"></script>
+    </head>
+    <body>
+      <script>
+(function() {
+       $("body").text("jQuery works");
+}());
+   </script>
+
+   <script>
+(function() {
+    if (Galleria) { $("body").text('Galleria works') }
+}());
+</script>
+    </body>
+</html>
